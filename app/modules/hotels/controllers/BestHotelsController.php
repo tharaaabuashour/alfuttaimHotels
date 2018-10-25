@@ -41,6 +41,7 @@ class BestHotelsController extends Controller
         $numberOfAdults = $this->request->getQuery("numberOfAdults");
 
 
+        
         $inWhere=[["provider",["BestHotels"]]];
         if ((isset($fromDate))) {
             $inWhere [] = ["fromDate",$fromDate];
